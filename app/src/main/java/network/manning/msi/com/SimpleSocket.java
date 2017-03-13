@@ -107,7 +107,7 @@ public class SimpleSocket extends Activity {
             } catch (IOException e) { // swallow
             }
             try {
-                if (writer!=null)
+                if (socket!=null)
                    socket.close();
             } catch (IOException e) { // swallow
             }
