@@ -113,5 +113,5 @@ public class SimpleSocket extends Activity {
             }
         }
         return output;
-    };
+    }
 }
