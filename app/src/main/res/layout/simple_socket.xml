@@ -1,30 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-    <ScrollView android:layout_height="wrap_content" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
 
 
-    -<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical">
+    -
 
-    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Enter some data and press SOCKET to submit to socket (server must be listening for this to work)" android:layout_marginBottom="10px" android:id="@+id/socket_label"/>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Server IP Address:" android:layout_marginBottom="10px" android:id="@+id/socket_ip_label"/>
+        <TextView
+            android:id="@+id/socket_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Enter some data and press SOCKET to submit to socket (server must be listening for this to work)" />
 
-    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="10.0.2.2" android:layout_marginBottom="10px" android:id="@+id/socket_ip"/>
+        <TextView
+            android:id="@+id/socket_ip_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Server IP Address:" />
 
-    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Server Port:" android:layout_marginBottom="10px" android:id="@+id/socket_port_label"/>
+        <EditText
+            android:id="@+id/socket_ip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="192.168.1.2" />
 
-    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="8889" android:layout_marginBottom="10px" android:id="@+id/socket_port"/>
+        <TextView
+            android:id="@+id/socket_port_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Server Port:" />
 
-    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Input Data:" android:layout_marginBottom="10px" android:id="@+id/socket_input_label"/>
+        <EditText
+            android:id="@+id/socket_port"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="8889" />
 
-    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="10px" android:id="@+id/socket_input"/>
+        <TextView
+            android:id="@+id/socket_input_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Input Data:" />
 
-    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="SOCKET" android:id="@+id/socket_button"/>
+        <EditText
+            android:id="@+id/socket_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Test" />
 
-    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Output:" android:layout_marginBottom="10px" android:id="@+id/socket_output_label"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content">
 
-    <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_marginBottom="10px" android:id="@+id/socket_output" android:textSize="10sp"/>
+            <Button
+                android:id="@+id/socket_message_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message Handler" />
 
-</LinearLayout>
+            <Button
+                android:id="@+id/socket_runnable_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Runnable Handler" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/socket_output_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Output:" />
+
+        <TextView
+            android:id="@+id/socket_output"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:textSize="10sp" />
+
+    </LinearLayout>
 
 </ScrollView>
